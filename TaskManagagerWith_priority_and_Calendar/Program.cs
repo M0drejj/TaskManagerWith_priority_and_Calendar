@@ -1,7 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
-
-namespace TaskManagagerWith_priority_and_Calendar
+﻿namespace TaskManagagerWith_priority_and_Calendar
 {
     internal class Program
     {
@@ -20,8 +17,9 @@ namespace TaskManagagerWith_priority_and_Calendar
             public DateTime DueDate { get; set; }
             public TaskPriority Priority { get; set; }
             public bool IsCompleted { get; set; }
+        }
 
-            public void PridatUkol()
+            public static void PridatUkol()
             {
                 Console.WriteLine("\n--- PŘIDÁNÍ ÚKOLU ---");
                 Console.Write("Zadejte id úkolu: ");
@@ -39,72 +37,119 @@ namespace TaskManagagerWith_priority_and_Calendar
                 Console.Write("Zadejte prioritu úkolu (Low, Medium, High): ");
                 TaskPriority priority = (TaskPriority)Enum.Parse(typeof(TaskPriority), Console.ReadLine());
 
+                TodoTask task1 = new()
+                {
+                    Id = id,
+                    Title = title,
+                    Description = description,
+                    DueDate = dueDate,
+                    Priority = priority,
+                    IsCompleted = false
+                };
 
-                TodoTask task1 = new();
-                task1.Id = id;
-                task1.Title = title;
-                task1.Description = description;
-                task1.DueDate = dueDate;
-                task1.Priority = priority;
-                task1.IsCompleted = false;
                 tasks.Add(task1);
+                Console.WriteLine("Úkol byl úspěšně přidán!\n");
             }
-        }
 
-        public void OdstranitUkol(int id)
-        {
-            int idUkolu = int.Parse(Console.ReadLine());
-            Console.Write("Zadej id pro ukol pro chces odstranit: ");
-            foreach (TodoTask task in tasks)
+            public static void OdstranitUkol()
             {
-                if (task.Id == idUkolu)
+                Console.WriteLine("\n--- ODSTRANĚNÍ ÚKOLU ---");
+                Console.Write("Zadej id úkolu, který chceš odstranit: ");
+                int idUkolu = int.Parse(Console.ReadLine());
+                int odebrano = tasks.RemoveAll(t => t.Id == idUkolu);
+                if (odebrano > 0)
+                    Console.WriteLine("Úkol byl úspěšně odstraněn!\n");
+                else
+                    Console.WriteLine("Úkol s timto ID nebyl nalezen!\n");
+            }
+            public static void OznacitZaDokoncene()
+            {
+                Console.WriteLine("\n--- SPLNĚNÍ ÚKOLU ---");
+                Console.Write("Zadej id úkolu, který jsi splnil: ");
+                int idUkolu = int.Parse(Console.ReadLine());
+
+                TodoTask? task = tasks.Find(t => t.Id == idUkolu);
+
+                if (task != null)
                 {
-                    tasks.Remove(task);
+                    task.IsCompleted = true;
+                    Console.WriteLine($"Úkol '{task.Title}' byl označen jako splněný.");
+                }
+                else
+                {
+                    Console.WriteLine("Úkol s tímto ID neexistuje.");
                 }
             }
-        }
-
-        public void OznacitZaDokoncene(int id)
-        {
-            tasks[id].IsCompleted = true;
-        }
-        public void UlozitDoSouboru()
-        {
-
-        }
-        public void NacistZSouboru()
-        {
-
-        }
-        static void Main()
-        {
-            TodoTask task = new();
-            char akce = char.Parse(Console.ReadLine());
-            while (true)
+            public static void VypisUkoly()
             {
-                switch (akce)
+                Console.WriteLine("\n--- SEZNAM ÚKOLŮ ---");
+                if (tasks.Count == 0)
                 {
-                    case '+':
-                        task.PridatUkol();
-                        break;
+                    Console.WriteLine("Žádné úkoly v seznamu.");
+                    return;
+                }
+                foreach (var t in tasks)
+                {
+                    string stav = t.IsCompleted ? "[HOTOVO]" : "[NEHOTOVO]";
+                    Console.WriteLine($"{t.Id}. {t.Title} - Termín: {t.DueDate.ToShortDateString()} - Priorita: {t.Priority} {stav}");
+                }
+                Console.WriteLine();
+            }
+            public static void UlozitDoSouboru()
+            {
+
+            }
+            public static void NacistZSouboru()
+            {
+
+            }
+            static void Main()
+            {
+                while (true)
+                {
+                    Console.WriteLine("Zvolte akci:");
+                    Console.WriteLine("+ : Přidat úkol");
+                    Console.WriteLine("- : Odstranit úkol");
+                    Console.WriteLine("o : Označit za dokončené");
+                    Console.WriteLine("v : Vypsat všechny úkoly");
+                    Console.WriteLine("x : Ukončit program");
+                    Console.Write("Vaše volba: ");
+
+                    char akce = Console.ReadKey().KeyChar;
+                    Console.WriteLine();
+
+                    switch (akce)
+                    {
+                        case '+':
+                            PridatUkol();
+                            break;
                         case '-':
-                        task.OdstranitUkol();
-                        break;
+                            OdstranitUkol();
+                            break;
                         case 'o':
-                        task.OznacitZaDokoncene();
-                        break;
-                        case 's':
-                        task.UlozitDoSouboru();
-                        break;
-                        case 'n':
-                        task.NacistZSouboru();
-                        break;
-                        
+                            OznacitZaDokoncene();
+                            break;
+                        case 'v':
+                            VypisUkoly();
+                            break;
+                        case 'x':
+                            Console.WriteLine("Ukončuji aplikaci...");
+                            return;
+                        default:
+                            Console.WriteLine("Neznámá akce, zkuste to znovu.\n");
+                            break;
+                    }
                 }
             }
-            
-
-
         }
     }
-}
+
+
+                
+                
+
+
+
+            
+        
+    
