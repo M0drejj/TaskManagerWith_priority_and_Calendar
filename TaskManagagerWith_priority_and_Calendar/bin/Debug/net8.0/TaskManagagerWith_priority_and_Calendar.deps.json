@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TaskManagagerWith_priority_and_Calendar/1.0.0": {
+        "runtime": {
+          "TaskManagagerWith_priority_and_Calendar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TaskManagagerWith_priority_and_Calendar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
