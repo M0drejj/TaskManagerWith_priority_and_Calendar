@@ -1,0 +1,15 @@
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\bin\Debug\net8.0\TodoApp.exe
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\bin\Debug\net8.0\TodoApp.deps.json
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\bin\Debug\net8.0\TodoApp.runtimeconfig.json
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\bin\Debug\net8.0\TodoApp.dll
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\bin\Debug\net8.0\TodoApp.pdb
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TodoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TodoApp.AssemblyInfoInputs.cache
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TodoApp.AssemblyInfo.cs
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TodoApp.csproj.CoreCompileInputs.cache
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TodoApp.sourcelink.json
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TodoApp.dll
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\refint\TodoApp.dll
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TodoApp.pdb
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TodoApp.genruntimeconfig.cache
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\ref\TodoApp.dll

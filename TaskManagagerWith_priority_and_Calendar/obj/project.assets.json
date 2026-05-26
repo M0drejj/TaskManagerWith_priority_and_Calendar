@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\modre\\source\\repos\\TaskManagagerWith_priority_and_Calendar\\TaskManagagerWith_priority_and_Calendar\\TaskManagagerWith_priority_and_Calendar.csproj",
-      "projectName": "TaskManagagerWith_priority_and_Calendar",
-      "projectPath": "C:\\Users\\modre\\source\\repos\\TaskManagagerWith_priority_and_Calendar\\TaskManagagerWith_priority_and_Calendar\\TaskManagagerWith_priority_and_Calendar.csproj",
+      "projectUniqueName": "C:\\Users\\modre\\source\\repos\\TaskManagagerWith_priority_and_Calendar\\TaskManagagerWith_priority_and_Calendar\\TodoApp.csproj",
+      "projectName": "TodoApp",
+      "projectPath": "C:\\Users\\modre\\source\\repos\\TaskManagagerWith_priority_and_Calendar\\TaskManagagerWith_priority_and_Calendar\\TodoApp.csproj",
       "packagesPath": "C:\\Users\\modre\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\modre\\source\\repos\\TaskManagagerWith_priority_and_Calendar\\TaskManagagerWith_priority_and_Calendar\\obj\\",
       "projectStyle": "PackageReference",

@@ -12,3 +12,4 @@ C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagage
 C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TaskManagagerWith_priority_and_Calendar.pdb
 C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TaskManagagerWith_priority_and_Calendar.genruntimeconfig.cache
 C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\ref\TaskManagagerWith_priority_and_Calendar.dll
+C:\Users\modre\source\repos\TaskManagagerWith_priority_and_Calendar\TaskManagagerWith_priority_and_Calendar\obj\Debug\net8.0\TaskManagagerWith_priority_and_Calendar.sourcelink.json
